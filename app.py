@@ -29,8 +29,8 @@ def validateSEntiments(listOfProductIds):
             print("consider")
             readyToRecomend.append(i)
     return  readyToRecomend
-    
-@app.route('/')
+
+@app.route('/', methods=['GET', 'POST'])
 def my_form_post():
     #userId = request.form['text1']
     if request.method == "POST":
